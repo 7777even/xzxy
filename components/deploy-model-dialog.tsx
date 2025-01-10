@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
-import { Select, SelectContent, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { ExternalLink, Search } from 'lucide-react'
 
 interface DeployModelDialogProps {
@@ -31,10 +31,49 @@ export function DeployModelDialog({ open, onOpenChange }: DeployModelDialogProps
                             <p className="text-xs text-gray-500">select a supported Model</p>
                             <Select>
                                 <SelectTrigger className="h-9">
-                                    <SelectValue placeholder="选择模型" />
+                                    <SelectValue placeholder="" />
                                 </SelectTrigger>
                                 <SelectContent>
-                                    {/* 添加模型选项 */}
+                                    <SelectItem value="model1">
+                                        <p>Aya-23-8B-Chat</p>
+                                        <p>CohereForAl/aya-23-8B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model2">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model3">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model4">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model5">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model6">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model7">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model8">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model9">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
+                                    <SelectItem value="model10">
+                                        <p>Aya-23-35B-Chat</p>
+                                        <p>CohereForAl/aya-23-35B</p>
+                                    </SelectItem>
                                 </SelectContent>
                             </Select>
                         </div>
@@ -87,10 +126,17 @@ export function DeployModelDialog({ open, onOpenChange }: DeployModelDialogProps
                             </a>
                             <Select>
                                 <SelectTrigger className="h-7">
-                                    <SelectValue placeholder="ml.g5.2xlarge" />
+                                    <SelectValue placeholder="" />
                                 </SelectTrigger>
                                 <SelectContent>
-                                    {/* 添加实例类型选项 */}
+                                    <SelectItem value="type1">ml.g4dn.2xlarge</SelectItem>
+                                    <SelectItem value="type2">ml.g4dn.12xlarge</SelectItem>
+                                    <SelectItem value="type3">ml.g5.2xlarge</SelectItem>
+                                    <SelectItem value="type4">ml.g5.12xlarge</SelectItem>
+                                    <SelectItem value="type5">ml.g5.48xlarge</SelectItem>
+                                    <SelectItem value="type6">ml.g4dn.4xlarge</SelectItem>
+                                    <SelectItem value="type7">ml.g4dn.8xlarge</SelectItem>
+                                    <SelectItem value="type8">ml.g4dn.16xlarge</SelectItem>
                                 </SelectContent>
                             </Select>
                         </div>

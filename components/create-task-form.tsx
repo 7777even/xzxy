@@ -59,11 +59,13 @@ export default function CreateTaskForm() {
                                 <p className="text-sm text-gray-500">The stage to perform in training</p>
                                 <Select>
                                     <SelectTrigger className="max-w-2xl">
-                                        <SelectValue placeholder="Select train stage" />
+                                        <SelectValue placeholder="" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="stage1">Stage 1</SelectItem>
-                                        <SelectItem value="stage2">Stage 2</SelectItem>
+                                        <SelectItem value="stage1">Supervised Fine-Tuning</SelectItem>
+                                        <SelectItem value="stage1">Pre-Training</SelectItem>
+                                        <SelectItem value="stage1">DPO</SelectItem>
+                                        <SelectItem value="stage1">KTO</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </div>
@@ -74,11 +76,49 @@ export default function CreateTaskForm() {
                                 <p className="text-sm text-gray-500">选择模型名称</p>
                                 <Select>
                                     <SelectTrigger className="max-w-2xl">
-                                        <SelectValue placeholder="Select model" />
+                                        <SelectValue placeholder="" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="model1">Model 1</SelectItem>
-                                        <SelectItem value="model2">Model 2</SelectItem>
+                                        <SelectItem value="model1">
+                                            <p>Aya-23-8B-Chat</p>
+                                            <p>CohereForAl/aya-23-8B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model2">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model3">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model4">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model5">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model6">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model3">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model3">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model3">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
+                                        <SelectItem value="model3">
+                                            <p>Aya-23-35B-Chat</p>
+                                            <p>CohereForAl/aya-23-35B</p>
+                                        </SelectItem>
                                     </SelectContent>
                                 </Select>
                             </div>
@@ -149,11 +189,51 @@ export default function CreateTaskForm() {
                                 <p className="text-sm text-gray-500">Select a Prompt Template to format the dataset</p>
                                 <Select>
                                     <SelectTrigger className="max-w-2xl">
-                                        <SelectValue placeholder="Select template" />
+                                        <SelectValue placeholder="" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="template1">Template 1</SelectItem>
-                                        <SelectItem value="template2">Template 2</SelectItem>
+                                        <SelectContent>
+                                            <SelectItem value="model1">
+                                                <p>Aya-23-8B-Chat</p>
+                                                <p>CohereForAl/aya-23-8B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model2">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model3">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model4">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model5">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model6">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model7">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model8">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model9">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                            <SelectItem value="model10">
+                                                <p>Aya-23-35B-Chat</p>
+                                                <p>CohereForAl/aya-23-35B</p>
+                                            </SelectItem>
+                                        </SelectContent>
                                     </SelectContent>
                                 </Select>
                             </div>
@@ -260,8 +340,15 @@ export default function CreateTaskForm() {
                                         <SelectValue placeholder="" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="dataset1">Dataset 1</SelectItem>
-                                        <SelectItem value="dataset2">Dataset 2</SelectItem>
+                                        <SelectItem value="dataset1">identify</SelectItem>
+                                        <SelectItem value="dataset2">alpaca_en_demo</SelectItem>
+                                        <SelectItem value="dataset3">alpaca_zh_demo</SelectItem>
+                                        <SelectItem value="dataset4">glaive_toolcall_en_demo</SelectItem>
+                                        <SelectItem value="dataset5">glaive_toolcall_zh_demo</SelectItem>
+                                        <SelectItem value="dataset6">alpaca_en_demo</SelectItem>
+                                        <SelectItem value="dataset7">alpaca_en_demo</SelectItem>
+                                        <SelectItem value="dataset8">alpaca_en_demo</SelectItem>
+                                        <SelectItem value="dataset9">alpaca_en_demo</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </div>
@@ -300,11 +387,17 @@ export default function CreateTaskForm() {
                                 <p className="text-sm text-gray-500">Select an instance type for training</p>
                                 <Select>
                                     <SelectTrigger className="max-w-2xl">
-                                        <SelectValue placeholder="Select instance type" />
+                                        <SelectValue placeholder="" />
                                     </SelectTrigger>
                                     <SelectContent>
-                                        <SelectItem value="type1">Type 1</SelectItem>
-                                        <SelectItem value="type2">Type 2</SelectItem>
+                                        <SelectItem value="type1">ml.g4dn.2xlarge</SelectItem>
+                                        <SelectItem value="type2">ml.g4dn.12xlarge</SelectItem>
+                                        <SelectItem value="type3">ml.g5.2xlarge</SelectItem>
+                                        <SelectItem value="type4">ml.g5.12xlarge</SelectItem>
+                                        <SelectItem value="type5">ml.g5.48xlarge</SelectItem>
+                                        <SelectItem value="type6">ml.g4dn.4xlarge</SelectItem>
+                                        <SelectItem value="type7">ml.g4dn.8xlarge</SelectItem>
+                                        <SelectItem value="type8">ml.g4dn.16xlarge</SelectItem>
                                     </SelectContent>
                                 </Select>
                             </div>
@@ -420,6 +513,7 @@ export default function CreateTaskForm() {
                                             <SelectItem value="bf16">bf16</SelectItem>
                                             <SelectItem value="fp16">fp16</SelectItem>
                                             <SelectItem value="fp32">fp32</SelectItem>
+                                            <SelectItem value="pure_bf16">pure_bf16</SelectItem>
                                         </SelectContent>
                                     </Select>
                                 </div>
@@ -468,11 +562,12 @@ export default function CreateTaskForm() {
                                             <p className="text-sm text-gray-500">The optimizer to use</p>
                                             <Select defaultValue="adamw_torch">
                                                 <SelectTrigger>
-                                                    <SelectValue placeholder="Select optimizer" />
+                                                    <SelectValue placeholder="" />
                                                 </SelectTrigger>
                                                 <SelectContent>
                                                     <SelectItem value="adamw_torch">adamw_torch</SelectItem>
-                                                    <SelectItem value="adam">adam</SelectItem>
+                                                    <SelectItem value="adamw_8bit">adamw_8bit</SelectItem>
+                                                    <SelectItem value="adafactor">adafactor</SelectItem>
                                                 </SelectContent>
                                             </Select>
                                         </div>
@@ -554,7 +649,6 @@ export default function CreateTaskForm() {
                                             </SelectTrigger>
                                             <SelectContent>
                                                 <SelectItem value="sigmoid">sigmoid</SelectItem>
-                                                <SelectItem value="other">other</SelectItem>
                                             </SelectContent>
                                         </Select>
                                     </div>
