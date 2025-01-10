@@ -1,0 +1,5 @@
+{
+  "/model-training/page": "app/model-training/page.js",
+  "/model-training/create/page": "app/model-training/create/page.js",
+  "/deployment-notes/page": "app/deployment-notes/page.js"
+}

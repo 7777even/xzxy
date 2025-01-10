@@ -1,0 +1,8 @@
+# 依赖文件
+node_modules/
+.next/
+dist/
+build/
+
+# 环境文件
+.env*
